@@ -30,7 +30,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "Products", href: "/products" },
     { name: "Impact", href: "/#impact" },
-    { name: "Sell", href: user?.role === "seller" ? "/seller" : "/seller-apply" },
+    { name: "Sell on EcoMarket", href: "/sell" },
   ];
 
   const userNavigation = [

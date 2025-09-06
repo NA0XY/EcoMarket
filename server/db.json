@@ -1,0 +1,201 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "username": "sarah_eco",
+      "email": "sarah@example.com",
+      "password": "hashedpassword",
+      "fullName": "Sarah Johnson",
+      "role": "buyer",
+      "loyaltyPoints": 2450,
+      "loyaltyTier": "gold",
+      "totalSpent": "15640.00",
+      "treesPlanted": 12,
+      "carbonOffset": "2.40",
+      "createdAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "id": "user2",
+      "username": "eco_seller",
+      "email": "seller@ecocompany.com",
+      "password": "hashedpassword",
+      "fullName": "Green Business Owner",
+      "role": "seller",
+      "loyaltyPoints": 500,
+      "loyaltyTier": "bronze",
+      "totalSpent": "0.00",
+      "treesPlanted": 0,
+      "carbonOffset": "0.00",
+      "createdAt": "2024-02-01T00:00:00.000Z"
+    },
+    {
+      "id": "admin1",
+      "username": "admin",
+      "email": "admin@ecomarket.com",
+      "password": "hashedpassword",
+      "fullName": "Platform Admin",
+      "role": "admin",
+      "loyaltyPoints": 0,
+      "loyaltyTier": "bronze",
+      "totalSpent": "0.00",
+      "treesPlanted": 0,
+      "carbonOffset": "0.00",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "21c50aa0-3bf5-4b1d-9ab7-99c00bf7f5f2",
+      "role": "buyer",
+      "loyaltyPoints": 0,
+      "loyaltyTier": "bronze",
+      "totalSpent": "0",
+      "treesPlanted": 0,
+      "carbonOffset": "0",
+      "createdAt": "2025-09-06T11:09:19.189Z",
+      "username": "Harsh",
+      "email": "HARSHSINGHAL1972@GMAIL.COM",
+      "password": "123456",
+      "fullName": "Harsh Singhal"
+    }
+  ],
+  "sellers": [
+    {
+      "id": "seller1",
+      "userId": "user2",
+      "businessName": "EcoClothing Co.",
+      "kycStatus": "verified",
+      "taxId": "TAX123456",
+      "bankDetails": {
+        "accountNumber": "****1234",
+        "bankName": "Green Bank"
+      },
+      "sustainabilityScore": 85,
+      "totalSales": "45670.00",
+      "pendingBalance": "8450.00",
+      "availableBalance": "12350.00",
+      "rating": "4.80",
+      "reviewCount": 127,
+      "createdAt": "2024-02-01T00:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod1",
+      "sellerId": "seller1",
+      "name": "Organic Cotton T-Shirt",
+      "description": "Made from 100% organic cotton with natural dyes",
+      "price": "899.00",
+      "category": "Clothing",
+      "tags": [
+        "organic",
+        "cotton",
+        "eco-friendly"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1523381210434-271e8be1f52b"
+      ],
+      "sustainabilityFeatures": [
+        "Organic materials",
+        "Natural dyes",
+        "Fair trade"
+      ],
+      "stockQuantity": 50,
+      "isActive": true,
+      "carbonFootprint": "2.50",
+      "recycledContent": 0,
+      "biodegradable": true,
+      "createdAt": "2024-03-01T00:00:00.000Z",
+      "updatedAt": "2024-03-01T00:00:00.000Z"
+    },
+    {
+      "id": "prod2",
+      "sellerId": "seller1",
+      "name": "Bamboo Water Bottle",
+      "description": "Sustainable bamboo fiber with leak-proof design",
+      "price": "1299.00",
+      "category": "Home & Garden",
+      "tags": [
+        "bamboo",
+        "reusable",
+        "zero-waste"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1602143407151-7111542de6e8"
+      ],
+      "sustainabilityFeatures": [
+        "Bamboo fiber",
+        "Reusable",
+        "BPA-free"
+      ],
+      "stockQuantity": 30,
+      "isActive": true,
+      "carbonFootprint": "1.80",
+      "recycledContent": 0,
+      "biodegradable": true,
+      "createdAt": "2024-03-02T00:00:00.000Z",
+      "updatedAt": "2024-03-02T00:00:00.000Z"
+    },
+    {
+      "id": "prod3",
+      "sellerId": "seller1",
+      "name": "Solar Garden Lights",
+      "description": "Eco-friendly outdoor lighting with automatic sensors",
+      "price": "2499.00",
+      "category": "Electronics",
+      "tags": [
+        "solar",
+        "energy-efficient",
+        "outdoor"
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64"
+      ],
+      "sustainabilityFeatures": [
+        "Solar powered",
+        "Energy efficient",
+        "Long lasting"
+      ],
+      "stockQuantity": 20,
+      "isActive": true,
+      "carbonFootprint": "5.20",
+      "recycledContent": 25,
+      "biodegradable": false,
+      "createdAt": "2024-03-03T00:00:00.000Z",
+      "updatedAt": "2024-03-03T00:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order1",
+      "buyerId": "user1",
+      "sellerId": "seller1",
+      "status": "delivered",
+      "paymentStatus": "released",
+      "totalAmount": "3497.00",
+      "platformFee": "174.85",
+      "loyaltyPointsEarned": 175,
+      "loyaltyPointsUsed": 0,
+      "shippingAddress": {
+        "street": "123 Green Street",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001",
+        "country": "India"
+      },
+      "paymentIntentId": "pi_test123",
+      "escrowReleaseDate": "2024-03-20T00:00:00.000Z",
+      "disputeReason": null,
+      "adminNotes": null,
+      "environmentalImpact": {
+        "treesPlanted": 2,
+        "carbonOffset": 0.5
+      },
+      "createdAt": "2024-03-15T00:00:00.000Z",
+      "updatedAt": "2024-03-20T00:00:00.000Z"
+    }
+  ],
+  "cartItems": [],
+  "orderItems": [],
+  "loyaltyTransactions": [],
+  "environmentalActions": [],
+  "payouts": []
+}

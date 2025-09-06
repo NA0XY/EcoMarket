@@ -15,6 +15,8 @@ import Checkout from "@/pages/checkout";
 import Dashboard from "@/pages/dashboard";
 import SellerDashboard from "@/pages/seller-dashboard";
 import AdminDashboard from "@/pages/admin-dashboard";
+import SellerLandingPage from "@/pages/seller-landing";
+import SellerApplyPage from "@/pages/seller-apply";
 import Auth from "@/pages/auth";
 import NotFound from "@/pages/not-found";
 
@@ -32,6 +34,8 @@ function Router() {
           <Route path="/dashboard" component={Dashboard} />
           <Route path="/seller" component={SellerDashboard} />
           <Route path="/admin" component={AdminDashboard} />
+          <Route path="/sell" component={SellerLandingPage} />
+          <Route path="/seller-apply" component={SellerApplyPage} />
           <Route path="/auth" component={Auth} />
           <Route component={NotFound} />
         </Switch>
